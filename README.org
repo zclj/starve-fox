@@ -1,0 +1,7 @@
+* Starve fox
+
+  Language learning project of implementing the card game 'starve fox'. The game is boring and sucks, but hey, we are here to practice programming languages!
+
+** Rules
+   
+   The rules can be found at [[https://boardgamegeek.com/boardgame/180240/svalta-rav][BoardGameGeek]].
