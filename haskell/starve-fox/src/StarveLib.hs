@@ -1,4 +1,4 @@
 module StarveLib (someFunc) where
 
-someFunc :: IO ()
-someFunc = putStrLn "Starve Fox!"
+someFunc :: String
+someFunc = "Starve Fox!"
