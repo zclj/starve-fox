@@ -4,5 +4,5 @@ import qualified StarveLib (someFunc)
 
 main :: IO ()
 main = do
-  putStrLn "Hello, Haskell!"
-  StarveLib.someFunc
+  putStrLn StarveLib.someFunc
+
