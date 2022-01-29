@@ -1,4 +1,7 @@
-module StarveLib (someFunc) where
+module StarveLib
+  ( makeDeck
+  , shuffleDeck)
+where
 
 import           System.IO.Unsafe
 import qualified System.Random         as Random
@@ -16,6 +19,7 @@ data Card = Card { value :: CardValue
           deriving (Show, Eq, Ord)
 
 data Deck = Deck { cards :: [Card] }
+          deriving (Eq, Show)
 
 makeDeck :: Deck
 makeDeck = Deck { cards = [ Card v s | v <- [Two .. Ace],
@@ -32,6 +36,3 @@ shuffleDeck (Deck { cards = c}) =
 -- $> (Card Two Hearts) > (Card Two Hearts)
 
 -- $> (Card Two Hearts) > (Card Two Hearts)
-
-someFunc :: String
-someFunc = "Starve Fox!"

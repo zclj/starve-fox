@@ -1,8 +1,8 @@
 module Main where
 
-import qualified StarveLib (someFunc)
+import qualified StarveLib (makeDeck)
 
 main :: IO ()
 main = do
-  putStrLn StarveLib.someFunc
+  putStrLn $ show $ StarveLib.makeDeck
 
