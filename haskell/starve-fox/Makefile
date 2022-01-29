@@ -1,3 +1,5 @@
+.PHONY: test
+
 ghcid:
 	ghcid --command "cabal repl" --allow-eval
 
