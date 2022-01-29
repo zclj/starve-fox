@@ -1,9 +1,14 @@
 module StarveFoxTest where
 
 import           StarveLib        as SUT
+import           Test.Tasty
 import           Test.Tasty.HUnit as HU
 
-helloWorldTest = HU.testCase "Unit test example" $
-    assertEqual "for (someFunc)"
-                "Starve Fox!" (SUT.someFunc)
+deckTests = testGroup "Deck" [sameDeckIsEqual]
+
+sameDeckIsEqual =
+  HU.testCase "A deck of cards can be compared for equality" $
+    let d = makeDeck
+    in assertEqual "Deck equality"
+       d d
 

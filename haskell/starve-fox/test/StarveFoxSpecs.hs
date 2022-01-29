@@ -7,7 +7,7 @@ testSuite :: TestTree
 testSuite = testGroup "Test Suite" [unitTests  --, properties
                                    ]
 
-unitTests = testGroup "Hunit" [helloWorldTest]
+unitTests = testGroup "Unit Tests" [deckTests]
 -- properties = testGroup "QuickCheck" []
 
 main = defaultMain testSuite
